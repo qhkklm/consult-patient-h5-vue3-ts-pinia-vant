@@ -8,7 +8,7 @@ This template should help get you started developing with Vue 3 in Vite.    [![P
 
 
 开发文档：https://zhousg.github.io/patient-h5-note/   
-国内站点：https://zhoushugang.gitee.io/patient-h5-note/
+国内站点：https://zhousg.atomgit.net/patient-h5-note/
 
 
 ![](./public/bg1.png)
