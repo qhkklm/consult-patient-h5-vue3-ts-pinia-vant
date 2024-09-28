@@ -102,7 +102,7 @@ const onLogout = async () => {
     </div>
     <!-- 快捷工具 -->
     <div class="user-page-group">
-      <h3>快捷工具</h3>
+      <h3>快捷工具321</h3>
       <van-cell
         v-for="(item, i) in tools"
         :key="item.label"
