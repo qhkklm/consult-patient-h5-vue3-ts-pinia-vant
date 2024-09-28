@@ -21,6 +21,7 @@ instance.interceptors.request.use(
       console.log('=>(request.ts:24) 321', 321)
       console.log('=>(request.ts:24) 321', 321)
       console.log('=>(request.ts:24) 321', 321)
+      console.log('=>(request.ts:24) 321', 321)
     }
     return config
   },
