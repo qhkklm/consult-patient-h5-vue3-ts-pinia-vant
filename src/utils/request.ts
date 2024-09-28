@@ -12,6 +12,7 @@ const instance = axios.create({
 
 instance.interceptors.request.use(
   (config) => {
+    console.log(1231231231)
     // 2. 携带token
     const store = useUserStore()
     if (store.user?.token && config.headers) {
