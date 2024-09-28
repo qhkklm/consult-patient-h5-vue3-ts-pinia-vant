@@ -14,9 +14,10 @@ instance.interceptors.request.use(
   (config) => {
     // 2. 携带token
     const store = useUserStore()
-    console.log('qwdasdas' + 123213)
     if (store.user?.token && config.headers) {
       config.headers.Authorization = `Bearer ${store.user.token}`
+      console.log('=>(request.ts:20) 321', 321)
+      console.log('=>(request.ts:24) 321', 321)
     }
     return config
   },
@@ -27,6 +28,7 @@ instance.interceptors.response.use(
   (res) => {
     // 3. 处理业务失败
     if (res.data.code !== 10000) {
+      console.log(321)
       // 错误提示
       showToast(res.data.message || '业务失败')
       // 返回 错误的promise
