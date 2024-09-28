@@ -16,12 +16,6 @@ instance.interceptors.request.use(
     const store = useUserStore()
     if (store.user?.token && config.headers) {
       config.headers.Authorization = `Bearer ${store.user.token}`
-      console.log('=>(request.ts:20) 321', 321)
-      console.log('=>(request.ts:24) 321', 321)
-      console.log('=>(request.ts:24) 321', 321)
-      console.log('=>(request.ts:24) 321', 321)
-      console.log('=>(request.ts:24) 321', 321)
-      console.log('=>(request.ts:24) 321', 321)
     }
     return config
   },
